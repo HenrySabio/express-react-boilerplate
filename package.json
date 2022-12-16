@@ -1,0 +1,30 @@
+{
+  "name": "express-react-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio using express and react",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenrySabio/express-react-portfolio.git"
+  },
+  "author": "Henry Sabio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenrySabio/express-react-portfolio/issues"
+  },
+  "homepage": "https://github.com/HenrySabio/express-react-portfolio#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
